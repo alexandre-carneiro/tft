@@ -1,0 +1,79 @@
+/* Reset de SCSS */
+
+/* Valores padrão para a maioria dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Padrão de Links Default */
+a {
+    text-decoration: none;
+}
+
+/* Corrigir problemas de exibição em alguns navegadores */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Redefinir estilos para elementos de mídia incorporados */
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+/* Redefinir estilos para elementos de formulário comuns */
+button,
+input,
+optgroup,
+select,
+textarea {
+    border: none;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    background-color: transparent;
+}
+
+/* Corrigir problemas de dimensionamento em alguns navegadores */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Garantido que a row seja limpa após as colunas e quebras de linha */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
